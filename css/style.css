@@ -52,6 +52,15 @@ body {
   width: 100%;
 }
 
+@media (min-width: 991px) {
+  .main {
+    content: "";
+    background: url(../images/project-wallpaper3.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
 .main::before {
   background-color: rgba(0, 0, 0, 0.6);
   content: "";
