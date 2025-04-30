@@ -1,0 +1,144 @@
+** start of undefined **
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+  <meta  charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title"> Killu music survey form</h1>
+    <p id="description"> Please fill out this form to help us improve the platform </p>
+    <form id="survey-form" method="post" action="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
+    <fieldset>
+      <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"/>
+      </label> 
+  
+    <label id="email-label">Email<input id="email" type="email" required placeholder="Enter your email"/>
+     </label> 
+  
+   <label id="number-label">Age(optional) <input id="number" type="number" min="0" max="100" placeholder="Enter your age(in numbers)"/>
+     </label>
+   
+    </fieldset>
+
+<p id="description"> What role you play in the music world? </p>
+    <select id="dropdown" name="dropdown"> 
+     <option value="">(select one)</option>
+            <option value="1">I'm a musician</option>
+            <option value="2">I'm learning </option>
+            <option value="4">Other</option>
+    </select>
+
+<fieldset>
+    <legend> Do you play any instruments? </legend>
+
+    <fieldset>
+    <label for="yes"> I do <input id="yes" type="radio" name="yes/no" class="inline" value="yes" checked /></label>
+
+     <label for="no"> I don't <input id="no" type="radio" name="yes/no" class="inline" value="no"  /></label>
+    </fieldset>
+
+<fieldset>
+  
+<legend> If you play one then... Which type of instrument do you play?</legend>
+
+      <label for="chords"> Chords<input id="Chords" type="radio" name="type" class="inline" value="Chords" checked /> </label>
+      
+       <label for="Wind"> Wind <input id="Wind" type="radio" name="type" class="inline" value="Wind"/></label>
+
+        <label for="Percussion"> Percussion <input id="Percussion" type="radio" name="type" class="inline" value="Percussion"/></label>
+
+     <label for="none"> Other <input id="none" type="radio" name="type" class="inline" value="none"/></label>
+</fieldset>
+
+<fieldset>
+            <legend>What's your favourite genre?</legend>
+  
+             <label for="rock">Rock<input id="rock" type="checkbox" name="genre" value="rock"/></label>
+
+            <label for="pop">Pop<input id="pop" type="checkbox" name="genre" value="pop"/> </label>
+             <label for="metal">Metal<input id="metal" type="checkbox" name="genre" value="metal"/></label>
+
+             <label for="classical">Classical<input id="classical" type="checkbox" name="genre" value="classical" /></label>
+
+             <label for="altrock">Alternative Rock <input id="altrock" type="checkbox" name="genre" value="altrock" /></label>
+
+             <label for="rap">Rap<input id="rap" type="checkbox" name="genre" value="rap"/></label>
+            <label for="other">Other <input id="other" type="checkbox" name="genre" value="other"/></label>
+
+      </fieldset>
+
+    <label for="comments"> Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+          <legend> <input id="submit" type="submit" name="personality" value="submimt" checked>
+            </legend>
+    </form>
+  </body>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: tahoma;
+  background-image: url(https://i.pinimg.com/564x/3c/ea/ff/3ceaff6a58d5e6a51aaa65319a1b7869.jpg);
+  color: white;
+  font-size: 20px;
+  width: 100%;
+      height: 100vh;
+      margin: 20;
+  } 
+  select {
+    margin: 10 200 25;
+    height: 5.5vh;
+  }
+  h1,p, legend {
+    text-align: center;
+    margin: 1em auto;
+  }
+  
+  form {
+  width: 80vw;
+  max-width: 600px;
+  min-width: 300px;
+  margin:  100 50 50;
+  padding-bottom: 2em;
+  }
+  
+   input,
+  textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 1em;
+    font-size: 15;
+  }
+
+  label {
+display: block;
+    margin: 0.25rem 7;
+    min-height: 2;
+  }
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #752322;
+    border-color: #7a1616;
+    color: white;
+    min-width: 300px;
+  }
+input[type="checkbox"] {
+  margin: -20 0 -5 -32;
+}
+
+.inline {
+    margin: -20 0 -5 -32;
+    height: 3vh;
+}
+
+** end of undefined **
+

@@ -1,0 +1,151 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Special Gothic", sans-serif;
+}
+
+/*Modificaciones en el Bootstrap*/
+.navbar {
+  background-color: rgb(231, 201, 239);
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.svg {
+  width: 40px;
+  border-radius: 50%;
+}
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #000;
+}
+
+.main {
+  background: url(../images/project-wallpaper3.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.main::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.main .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: rgba(195, 128, 220, 0.929);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.nav-link:hover::before,
+.nav-link:active::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.footer {
+  background-color: rgb(231, 201, 239);
+}
+
+.footer__sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  justify-content: space-between;
+  align-content: baseline;
+  color: #000;
+  background-color: rgb(231, 201, 239);
+  height: fit-content;
+  padding: 30px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: #000;
+}
+
+@media (min-width: 991px) {
+  .footer__link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: rgba(195, 128, 220, 0.929);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.footer__link:hover::before,
+.footer__link:active::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.container__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div__content {
+  margin: 20px;
+  margin-top: -40px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
