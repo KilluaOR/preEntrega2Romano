@@ -85,14 +85,28 @@
       <!--formulario-->
       <section class="container container__section">
         <h2>Contactame:</h2>
-        <form action="procesarform" method="post">
-          <fieldset>
-            <legend>Formulario de contacto</legend>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required />
-            <label for="message">Escribe tu mensaje:</label>
+        <form class="form" action="procesarform" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="form__leg">Formulario de contacto</legend>
+            <label class="leg__content" for="name">Nombre:</label>
+            <input
+              class="leg__content"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <label class="leg__content" for="email">Email:</label>
+            <input
+              class="leg__content"
+              type="text"
+              id="email"
+              name="email"
+              required
+            />
+            <label class="leg__content" for="message"
+              >Escribe tu mensaje:</label
+            >
             <textarea name="message" id="message" rows="4" required></textarea>
           </fieldset>
           <button type="submit">Enviar</button>
