@@ -146,22 +146,44 @@ body {
   visibility: visible;
 }
 
+.parte1 {
+  grid-area: parte1;
+}
+
+.parte2 {
+  grid-area: parte2;
+}
+
+.parte3 {
+  grid-area: parte3;
+  display: grid;
+  place-items: center;
+}
+
+.parte4 {
+  grid-area: parte4;
+}
+
+.parte5 {
+  grid-area: parte5;
+}
+
 .container__section {
   position: relative;
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   grid-template-areas:
     "parte1 parte2"
     "parte3 parte3"
     "parte4 parte5";
-  justify-content: center;
+  justify-content: baseline;
   align-content: center;
-  height: 100vh;
-  gap: 1.3rem;
 }
+/*
 .div__content {
   margin: 20px;
   margin-top: px;
 }
+*/
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
