@@ -47,7 +47,7 @@ body {
 }
 
 .main {
-  background: url(../images/project-wallpaper3.jpg) no-repeat center;
+  background: url(../images/fondo2.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
 }
@@ -55,7 +55,7 @@ body {
 @media (min-width: 991px) {
   .main {
     content: "";
-    background: url(../images/project-wallpaper3.jpg) no-repeat center;
+    background: url(../images/fondo2.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
   }
@@ -150,28 +150,29 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
-    "parte1 parte2"
+    "parte1 parte1"
+    "parte2 parte2"
     "parte3 parte3"
     "parte4 parte5";
   justify-items: center;
   justify-content: center;
-  align-content: center;
-  row-gap: 50px;
+  align-content: end;
+  row-gap: 40px;
 }
 
 .parte1 {
   grid-area: parte1;
+}
+
+.parte2 {
+  grid-area: parte2;
   background-color: #66677774;
   border: solid #00000091;
   border-radius: 15px;
   padding: 10px;
   box-shadow: #000;
-}
-
-.parte2 {
-  grid-area: parte2;
 }
 
 .parte3 {
@@ -188,6 +189,7 @@ body {
   border-radius: 15px;
   padding: 10px;
   box-shadow: #000;
+  margin-bottom: 10px;
 }
 
 .parte5 {
