@@ -13,8 +13,8 @@ body {
 
 /*Modificaciones en el Bootstrap*/
 .navbar {
-  background-color: rgb(231, 201, 239);
-  height: 80px;
+  background-color: rgb(179, 186, 241);
+  height: 60px;
   margin: 20px;
   border-radius: 16px;
   padding: 0.5rem;
@@ -98,7 +98,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(231, 201, 239);
+  background-color: rgb(179, 186, 241);
 }
 
 .footer__sec {
@@ -108,7 +108,7 @@ body {
   justify-content: space-between;
   align-content: baseline;
   color: #000;
-  background-color: rgb(231, 201, 239);
+  background-color: rgb(179, 186, 241);
   height: fit-content;
   padding: 30px;
 }
@@ -146,8 +146,28 @@ body {
   visibility: visible;
 }
 
+.container__section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "parte1 parte2"
+    "parte3 parte3"
+    "parte4 parte5";
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  row-gap: 50px;
+}
+
 .parte1 {
   grid-area: parte1;
+  background-color: #66677774;
+  border: solid #00000091;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: #000;
 }
 
 .parte2 {
@@ -158,26 +178,25 @@ body {
   grid-area: parte3;
   display: grid;
   place-items: center;
+  text-decoration: underline;
 }
 
 .parte4 {
   grid-area: parte4;
+  background-color: #66677774;
+  border: solid #00000091;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: #000;
 }
 
 .parte5 {
   grid-area: parte5;
-}
-
-.container__section {
-  position: relative;
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-  grid-template-areas:
-    "parte1 parte2"
-    "parte3 parte3"
-    "parte4 parte5";
-  justify-content: baseline;
-  align-content: center;
+  background-color: #66677774;
+  border: solid #00000091;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: #000;
 }
 /*
 .div__content {
