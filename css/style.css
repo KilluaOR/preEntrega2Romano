@@ -148,13 +148,20 @@ body {
 
 .container__section {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template-areas:
+    "parte1 parte2"
+    "parte3 parte3"
+    "parte4 parte5";
   justify-content: center;
+  align-content: center;
+  height: 100vh;
+  gap: 1.3rem;
 }
 .div__content {
   margin: 20px;
-  margin-top: -40px;
+  margin-top: px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
