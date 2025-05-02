@@ -125,7 +125,7 @@ body {
   color: #000;
 }
 
-@media (min-width: 991px) {
+@media (max-width: 1024px) {
   .footer__link::before {
     content: "";
     position: absolute;
