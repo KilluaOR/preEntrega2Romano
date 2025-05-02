@@ -203,4 +203,48 @@ body {
   text-align: center;
 }
 
+.container__projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "proy1 proy1 proy1"
+    "proy2 proy3 proy4";
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.proy1 {
+  grid-area: proy1;
+}
+
+.proy2 {
+  grid-area: proy2;
+}
+
+.proy3 {
+  grid-area: proy3;
+}
+
+.proy4 {
+  grid-area: proy4;
+}
+
+.project__img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+
+.project__img:hover {
+  transform: scale(1.1);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
