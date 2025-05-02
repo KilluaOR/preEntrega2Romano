@@ -52,7 +52,7 @@ body {
   width: 100%;
 }
 
-@media (min-width: 991px) {
+@media (max-width: 1024px) {
   .main {
     content: "";
     background: url(../images/fondo2.jpg) no-repeat center;
@@ -76,7 +76,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 991px) {
+@media (max-width: 1024px) {
   .nav-link::before {
     content: "";
     position: absolute;
