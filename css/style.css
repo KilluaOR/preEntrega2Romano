@@ -146,6 +146,7 @@ body {
   visibility: visible;
 }
 
+/* grid de about */
 .container,
 .about {
   display: grid;
@@ -166,7 +167,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
-
+/* areas del grid*/
 .parte1 {
   grid-area: parte1;
   display: flex;
@@ -206,25 +207,99 @@ body {
   padding: 10px;
   box-shadow: #000;
 }
-/*
-.parte4,
-.parte5 {
-  display: flex;
-  flex-direction: column;
-}
-*/
+
 .about__texto,
 .about__subt {
   text-align: center;
 }
 
-.container__projects {
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* grid de proyectos */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header header header"
+    "form survey docs";
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+/* areas del grid */
+.projects__header {
+  grid-area: header;
+  text-align: center;
+}
+
+.projects__item--form {
+  grid-area: form;
+}
+
+.projects__item--survey {
+  grid-area: survey;
+}
+
+.projects__item--docs {
+  grid-area: docs;
+}
+
+.project__img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.5s ease-in-out;
+}
+
+.project__img:hover {
+  transform: scale(1.05);
+}
+
+/* ajustes para el responsive */
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "form survey"
+      "docs docs";
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "form"
+      "survey"
+      "docs";
+  }
+
+  .project__img {
+    height: auto;
+  }
+}
+
+/*
+.container,
+.projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "proy1 proy1 proy1"
-    "proy2 proy3 proy4";
+    "header header header"
+    "form survey docs";
   justify-content: center;
   align-content: center;
   grid-gap: 10px;
@@ -233,20 +308,20 @@ body {
   margin: 0 auto;
 }
 
-.proy1 {
-  grid-area: proy1;
+.projects__header {
+  grid-area: header;
 }
 
-.proy2 {
-  grid-area: proy2;
+.projects__item--form {
+  grid-area: form;
 }
 
-.proy3 {
-  grid-area: proy3;
+.projects__item--survey {
+  grid-area: survey;
 }
 
-.proy4 {
-  grid-area: proy4;
+.projects__item--docs {
+  grid-area: docs;
 }
 
 .project__img {
@@ -261,5 +336,5 @@ body {
 .project__img:hover {
   transform: scale(1.1);
 }
-
+*/
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
