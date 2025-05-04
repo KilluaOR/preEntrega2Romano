@@ -265,10 +265,36 @@ body {
   transform: scale(1.05);
 }
 
+.project__title {
+  color: white;
+  height: 40px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.project__code {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project__title:hover .project__code {
+  opacity: 1;
+}
+
+.project__item,
+.project,
+.project__title {
+  text-decoration: none;
+}
+
 /* ajustes para el responsive */
 @media (max-width: 1024px) {
   .projects {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "header header"
       "form survey"
