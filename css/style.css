@@ -329,4 +329,39 @@ body {
 }
 /*fin de modificaciones en proyectos*/
 
+/*modificaciones en designs*/
+.designs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "diseño1 texto1"
+    "texto2 diseño2"
+    "boton boton";
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.design__item--1 {
+  grid-area: diseño1;
+}
+
+.design__item--2 {
+  grid-area: texto1;
+}
+
+.design__item--3 {
+  grid-area: diseño2;
+}
+
+.design__item--4 {
+  grid-area: texto2;
+}
+
+.design__item--5 {
+  grid-area: boton;
+}
+
+/*fin de modificaciones en designs*/
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
