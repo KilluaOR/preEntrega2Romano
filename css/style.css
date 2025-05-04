@@ -170,6 +170,7 @@ body {
   justify-content: center;
   align-content: center;
   row-gap: 40px;
+  font-size: 18px;
 }
 
 .about__title {
@@ -188,10 +189,6 @@ body {
 
 .about__section--parte2 {
   grid-area: parte2;
-  background-color: #66677774;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: #000;
   margin-bottom: 10px;
 }
 
@@ -203,19 +200,11 @@ body {
 
 .about__section--parte4 {
   grid-area: parte4;
-  background-color: #66677774;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: #000;
   margin-bottom: 10px;
 }
 
 .about__section--parte5 {
   grid-area: parte5;
-  background-color: #66677774;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: #000;
 }
 
 .about__texto,
@@ -340,7 +329,7 @@ body {
     "boton boton";
   align-content: center;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
 }
 
 .design__item--1 {
@@ -363,5 +352,24 @@ body {
   grid-area: boton;
 }
 
+.design__title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.design__text {
+  text-align: center;
+}
+
+.design__btn {
+  background-color: rgb(179, 186, 241);
+}
+
+.design__btn--text {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(179, 186, 241);
+  border-radius: 10%;
+}
 /*fin de modificaciones en designs*/
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
