@@ -11,7 +11,7 @@ body {
   font-family: "Special Gothic", sans-serif;
 }
 
-/*Modificaciones en el Bootstrap*/
+/*Modificaciones en el Bootstrap para navbar*/
 .navbar {
   background-color: rgb(179, 186, 241);
   height: 60px;
@@ -46,12 +46,37 @@ body {
   color: #000;
 }
 
+/*arreglos para el responsive de navbar*/
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: rgba(195, 128, 220, 0.929);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.nav-link:hover::before,
+.nav-link:active::before {
+  width: 100%;
+  visibility: visible;
+}
+/*fin de modificaciones para navbar*/
+
+/*styles de main*/
 .main {
   background: url(../images/fondo2.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
 }
 
+/*arreglos para el responsive de main*/
 @media (max-width: 1024px) {
   .main {
     content: "";
@@ -76,27 +101,9 @@ body {
   position: relative;
 }
 
-@media (max-width: 1024px) {
-  .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 2px;
-    background-color: rgba(195, 128, 220, 0.929);
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
-  }
-}
+/*fin styles de main*/
 
-.nav-link:hover::before,
-.nav-link:active::before {
-  width: 100%;
-  visibility: visible;
-}
-
+/*styles de footer*/
 .footer {
   background-color: rgb(179, 186, 241);
 }
@@ -124,7 +131,7 @@ body {
 .footer__link:active {
   color: #000;
 }
-
+/*arreglos para el responsive de footer*/
 @media (max-width: 1024px) {
   .footer__link::before {
     content: "";
@@ -145,7 +152,9 @@ body {
   width: 100%;
   visibility: visible;
 }
+/*fin de styles de footer*/
 
+/*modificaciones en sobre mi*/
 /* grid de about */
 .container,
 .about {
@@ -167,6 +176,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
+
 /* areas del grid*/
 .parte1 {
   grid-area: parte1;
@@ -220,6 +230,7 @@ body {
   padding: 1rem;
 }
 
+/*modificaciones en proyectos*/
 /* grid de proyectos */
 .projects {
   display: grid;
@@ -316,51 +327,6 @@ body {
     height: auto;
   }
 }
+/*fin de modificaciones en proyectos*/
 
-/*
-.container,
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "header header header"
-    "form survey docs";
-  justify-content: center;
-  align-content: center;
-  grid-gap: 10px;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.projects__header {
-  grid-area: header;
-}
-
-.projects__item--form {
-  grid-area: form;
-}
-
-.projects__item--survey {
-  grid-area: survey;
-}
-
-.projects__item--docs {
-  grid-area: docs;
-}
-
-.project__img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  transition: all 0.5s ease-in-out;
-}
-
-.project__img:hover {
-  transform: scale(1.1);
-}
-*/
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
