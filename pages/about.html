@@ -84,11 +84,11 @@
     <main class="main">
       <!--breve descripción de mi persona-->
       <section class="container about">
-        <div class="about__header parte1">
+        <div class="about__header about__section--parte1">
           <h2 class="about__title">Ornella Romano</h2>
           <img class="about__img" src="" alt="imagen" />
         </div>
-        <div class="about__section parte2">
+        <div class="about__section about__section--parte2">
           <p class="about__texto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
             error nulla asperiores distinctio assumenda eveniet, esse corporis
@@ -97,16 +97,16 @@
           </p>
         </div>
         <!--Educacion-->
-        <div class="about__section parte3">
+        <div class="about__section about__section--parte3">
           <h3 class="about__title">Antecedentes Académicos</h3>
         </div>
-        <div class="about__section parte4">
+        <div class="about__section about__section--parte4">
           <h4 class="about__subt">Educación básica</h4>
           <p class="about__texto">
             Bachiller de Cs. Naturales Escuela Mutualista (2014-2020)
           </p>
         </div>
-        <div class="about__section parte5">
+        <div class="about__section about__section--parte5">
           <h4 class="about__subt">Educación Universitaria y terciaria</h4>
           <p class="about__texto">
             Universidad Nacional de la Patagonia
@@ -122,7 +122,9 @@
     <footer class="footer">
       <section class="footer__sec">
         <div class="footer__contact">
-          <strong>Contacto</strong>
+          <p>
+            <strong class="footer__title">Contacto</strong>
+          </p>
           <br />
           <a
             href="https://github.com/KilluaOR"
@@ -154,20 +156,23 @@
         <div class="footer__paginas">
           <p>
             <strong>Páginas</strong>
-            <li><a class="footer__link" href="../index.html">Inicio</a></li>
-            <li>
-              <a class="footer__link" href="about.html">Sobre Mi</a>
-            </li>
-            <li>
-              <a class="footer__link" href="projects.html">Proyectos</a>
-            </li>
-            <li>
-              <a class="footer__link" href="designs.html">Diseños</a>
-            </li>
-            <li>
-              <a class="footer__link" href="designs.html">Contacto</a>
-            </li>
           </p>
+          <br />
+          <ul class="footer__list">
+            <li><a class="footer__link" href="index.html">Inicio</a></li>
+            <li>
+              <a class="footer__link" href="./pages/about.html">Sobre Mi</a>
+            </li>
+            <li>
+              <a class="footer__link" href="./pages/projects.html">Proyectos</a>
+            </li>
+            <li>
+              <a class="footer__link" href="./pages/designs.html">Diseños</a>
+            </li>
+            <li>
+              <a class="footer__link" href="./pages/designs.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </section>
     </footer>
