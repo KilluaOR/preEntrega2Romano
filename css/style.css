@@ -294,12 +294,24 @@ body {
 /* ajustes para el responsive */
 @media (max-width: 1024px) {
   .projects {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+  }
+
+  /*
+  .projects {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "header header"
       "form survey"
       "docs docs";
   }
+      */
 }
 
 @media (max-width: 600px) {
@@ -320,6 +332,7 @@ body {
 
 /*modificaciones en designs*/
 .designs {
+  position: sticky;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -352,18 +365,16 @@ body {
   grid-area: boton;
 }
 
-.design__title {
-  margin-top: 100px;
-  text-align: center;
-}
-
-.design__text {
+.design__item {
+  position: relative;
+  top: 100px;
   text-align: center;
 }
 
 .design__btn {
   background-color: rgb(179, 186, 241);
   border: none;
+  margin-bottom: 100px;
 }
 
 .design__btn--text {
@@ -377,5 +388,23 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .designs {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+  }
+  .design__item {
+    position: relative;
+    top: 100px;
+    text-align: center;
+  }
+}
+
 /*fin de modificaciones en designs*/
+
+/*modificaciones en contacto*/
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
