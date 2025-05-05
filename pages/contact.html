@@ -84,9 +84,14 @@
     <main class="main">
       <!--formulario-->
       <section class="container contact">
-        <h2 class="contact__title">Contactame:</h2>
+        <div class="contact__item contact__item--img">
+          <img class="contact__img" src="" alt="imagen" />
+        </div>
+        <div class="contact__item">
+          <h2 class="contact__title">Contactame:</h2>
+        </div>
         <form class="contact__form" action="procesarform" method="post">
-          <fieldset class="contact__form-fieldset">
+          <div class="contact__form-fieldset">
             <legend class="contact__form-legend">Formulario de contacto</legend>
             <label class="contact__label contact__label--name" for="name"
               >Nombre:</label
@@ -118,8 +123,10 @@
               rows="4"
               required
             ></textarea>
-          </fieldset>
-          <button class="contact__btn" type="submit">Enviar</button>
+          </div>
+          <div class="contact__item">
+            <button class="contact__btn" type="submit">Enviar</button>
+          </div>
         </form>
       </section>
     </main>

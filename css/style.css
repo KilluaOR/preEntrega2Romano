@@ -293,6 +293,7 @@ body {
 
 /* ajustes para el responsive */
 @media (max-width: 1024px) {
+  /*
   .projects {
     position: relative;
     top: 100px;
@@ -302,8 +303,7 @@ body {
     align-items: center;
     align-content: flex-end;
   }
-
-  /*
+*/
   .projects {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -311,7 +311,6 @@ body {
       "form survey"
       "docs docs";
   }
-      */
 }
 
 @media (max-width: 600px) {
@@ -389,6 +388,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .main {
+    font-size: 10px;
+  }
   .designs {
     position: sticky;
     display: flex;
@@ -403,8 +405,15 @@ body {
     text-align: center;
   }
 }
-
 /*fin de modificaciones en designs*/
 
 /*modificaciones en contacto*/
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+/*fin de modificaciones en contacto*/
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap");
