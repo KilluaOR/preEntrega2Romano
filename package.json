@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "sass": "^1.88.0"
+  },
+  "name": "preentrega1romano",
+  "version": "1.0.0",
+  "description": "Este es un proyecto web desarrollado para la segunda pre-entrega del curso de Desarrollo Web. Se trata de un sitio estructurado con HTML semántico, CSS personalizado con metodología BEM y el uso del framework Bootstrap para lograr una maquetación y diseño responsive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KilluaOR/preEntrega2Romano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KilluaOR/preEntrega2Romano/issues"
+  },
+  "homepage": "https://github.com/KilluaOR/preEntrega2Romano#readme"
+}
