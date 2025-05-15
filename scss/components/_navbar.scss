@@ -1,9 +1,11 @@
+@use "../abstracts/variables" as vars;
+
 /*Modificaciones en el Bootstrap para navbar*/
 .navbar {
-  background-color: $primary-color;
+  background-color: vars.$primary-color;
   height: 60px;
   margin: 20px;
-  border-radius: $navbar-radius;
+  border-radius: vars.$navbar-radius;
   padding: 0.5rem;
 }
 

@@ -1,0 +1,109 @@
+/*modificaciones en proyectos*/
+/* grid de proyectos */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header header header"
+    "form survey docs";
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+/* areas del grid */
+.projects__header {
+  grid-area: header;
+  text-align: center;
+}
+
+.projects__item--form {
+  grid-area: form;
+}
+
+.projects__item--survey {
+  grid-area: survey;
+}
+
+.projects__item--docs {
+  grid-area: docs;
+}
+
+.project__img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.5s ease-in-out;
+}
+
+.project__img:hover {
+  transform: scale(1.05);
+}
+
+.project__title {
+  color: white;
+  height: 40px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.project__code {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project__title:hover .project__code {
+  opacity: 1;
+}
+
+.project__item,
+.project,
+.project__title {
+  text-decoration: none;
+}
+
+/* ajustes para el responsive */
+@media (max-width: 1024px) {
+  /*
+  .projects {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+  }
+*/
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "form survey"
+      "docs docs";
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "form"
+      "survey"
+      "docs";
+  }
+
+  .project__img {
+    height: auto;
+  }
+}
+/*fin de modificaciones en proyectos*/

@@ -1,0 +1,77 @@
+/*modificaciones en designs*/
+.designs {
+  position: sticky;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "diseño1 texto1"
+    "texto2 diseño2"
+    "boton boton";
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.design__item--1 {
+  grid-area: diseño1;
+}
+
+.design__item--2 {
+  grid-area: texto1;
+}
+
+.design__item--3 {
+  grid-area: diseño2;
+}
+
+.design__item--4 {
+  grid-area: texto2;
+}
+
+.design__item--5 {
+  grid-area: boton;
+}
+
+.design__item {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.design__btn {
+  background-color: rgb(179, 186, 241);
+  border: none;
+  margin-bottom: 100px;
+}
+
+.design__btn--text {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(179, 186, 241);
+  padding: 10px;
+}
+
+.design__img {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    font-size: 10px;
+  }
+  .designs {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+  }
+  .design__item {
+    position: relative;
+    top: 100px;
+    text-align: center;
+  }
+}
+/*fin de modificaciones en designs*/
