@@ -212,6 +212,17 @@ body {
   justify-items: center;
 }
 
+.contact__btn {
+  background-color: rgb(179, 186, 241);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 /*fin de modificaciones en contacto*/
 /*modificaciones en designs*/
 .designs {

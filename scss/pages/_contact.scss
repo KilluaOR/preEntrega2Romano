@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 @use "../abstracts/variables" as vars;
 /*modificaciones en contacto*/
 .contact {
@@ -6,5 +7,9 @@
   align-content: center;
   align-items: center;
   justify-items: center;
+}
+
+.contact__btn {
+  @include mixins.button-style;
 }
 /*fin de modificaciones en contacto*/
