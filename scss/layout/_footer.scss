@@ -1,6 +1,7 @@
+@use "../abstracts/variables" as vars;
 /*styles de footer*/
 .footer {
-  background-color: rgb(179, 186, 241);
+  background-color: vars.$primary-color;
 }
 
 .footer__sec {
@@ -10,7 +11,7 @@
   justify-content: space-between;
   align-content: baseline;
   color: #000;
-  background-color: rgb(179, 186, 241);
+  background-color: vars.$primary-color;
   height: fit-content;
   padding: 30px;
 }
@@ -20,11 +21,11 @@
   color: #000;
   font-weight: 500;
   position: relative;
-}
 
-.footer__link:hover,
-.footer__link:active {
-  color: #000;
+  &:hover,
+  &:active {
+    color: #000;
+  }
 }
 /*arreglos para el responsive de footer*/
 @media (max-width: 1024px) {

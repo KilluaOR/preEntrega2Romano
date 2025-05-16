@@ -38,12 +38,10 @@
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
-
-.project__img:hover {
-  transform: scale(1.05);
-}
-
 .project__title {
   color: white;
   height: 40px;

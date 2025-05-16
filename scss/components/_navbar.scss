@@ -28,13 +28,17 @@
   color: #666777;
   font-weight: 500;
   position: relative;
-}
+  &:hover,
+  &:active {
+    color: #000;
+  }
 
-.nav-link:hover,
-.nav-link:active {
-  color: #000;
+  &:hover::before,
+  &:active::before {
+    width: 100%;
+    visibility: visible;
+  }
 }
-
 /*arreglos para el responsive de navbar*/
 @media (min-width: 991px) {
   .nav-link::before {
@@ -51,9 +55,4 @@
   }
 }
 
-.nav-link:hover::before,
-.nav-link:active::before {
-  width: 100%;
-  visibility: visible;
-}
 /*fin de modificaciones para navbar*/

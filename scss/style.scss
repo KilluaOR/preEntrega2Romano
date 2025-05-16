@@ -10,7 +10,6 @@
 @use "base/base";
 
 // 3. Layout
-@use "layout/header";
 @use "layout/footer";
 @use "layout/main";
 
@@ -22,4 +21,4 @@
 @use "pages";
 
 // 6. Vendors
-@use "../node_modules/bootstrap/scss/bootstrap";
+@use "vendors/bootstrap";
