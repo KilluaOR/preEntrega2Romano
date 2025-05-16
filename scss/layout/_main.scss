@@ -3,26 +3,25 @@
 @media (max-width: 1024px) {
   .main {
     content: "";
-    background: vars.$main-img no-repeat center;
+    background: #{vars.$main-img} no-repeat center;
     background-size: cover;
     width: 100%;
+    z-index: 1;
   }
 }
 
 .main {
-  background: vars.$main-img no-repeat center;
+  background: #{vars.$main-img} no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
   &::before {
-    background-color: vars.$main-color;
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0;
   }
   .container {
     height: 100vh;

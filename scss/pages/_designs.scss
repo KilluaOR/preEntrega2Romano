@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 @use "../abstracts/variables" as vars;
 /*modificaciones en designs*/
 .designs {
@@ -41,8 +42,7 @@
 }
 
 .design__btn {
-  background-color: vars.$primary-color;
-  border: none;
+  @include mixins.button-style;
   margin-bottom: 100px;
 }
 

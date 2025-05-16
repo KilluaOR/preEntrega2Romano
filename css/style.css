@@ -64,26 +64,25 @@ body {
 @media (max-width: 1024px) {
   .main {
     content: "";
-    background: url("../images/fondo2.jpg") no-repeat center;
+    background: url("/images/fondo2.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
+    z-index: 1;
   }
 }
 .main {
-  background: url("../images/fondo2.jpg") no-repeat center;
+  background: url("/images/fondo2.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
 }
 .main::before {
-  background-color: black;
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 0;
 }
 .main .container {
   height: 100vh;
@@ -254,7 +253,13 @@ body {
 
 .design__btn {
   background-color: rgb(179, 186, 241);
+  color: #000;
+  padding: 10px 20px;
   border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
   margin-bottom: 100px;
 }
 
