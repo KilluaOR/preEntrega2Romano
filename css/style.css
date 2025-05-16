@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*colores*/
+/*fonts*/
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +76,7 @@ body {
   position: relative;
 }
 .main::before {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
   content: "";
   position: absolute;
   top: 0;
@@ -102,9 +104,7 @@ body {
   border: none;
   font-size: 1.25rem;
 }
-
-.navbar-toggler:focus,
-.btn-close:focus {
+.navbar-toggler:focus .btn-close:focus {
   box-shadow: none;
   outline: none;
 }

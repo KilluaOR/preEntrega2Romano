@@ -1,19 +1,21 @@
+@use "../abstracts/variables" as vars;
+
 @media (max-width: 1024px) {
   .main {
     content: "";
-    background: url("../images/fondo2.jpg") no-repeat center;
+    background: vars.$main-img no-repeat center;
     background-size: cover;
     width: 100%;
   }
 }
 
 .main {
-  background: url("../images/fondo2.jpg") no-repeat center;
+  background: vars.$main-img no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
   &::before {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: vars.$main-color;
     content: "";
     position: absolute;
     top: 0;

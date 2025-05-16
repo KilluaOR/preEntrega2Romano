@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as vars;
 
 body {
-  color: white;
+  color: vars.$project-color2;
   font-family: vars.$font-main;
 }

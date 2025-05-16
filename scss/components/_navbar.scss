@@ -12,14 +12,13 @@
 .navbar-toggler {
   border: none;
   font-size: 1.25rem;
+  &:focus {
+    .btn-close:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
 }
-
-.navbar-toggler:focus,
-.btn-close:focus {
-  box-shadow: none;
-  outline: none;
-}
-
 .svg {
   width: 40px;
   border-radius: 50%;
