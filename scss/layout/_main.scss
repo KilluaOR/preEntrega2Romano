@@ -1,14 +1,8 @@
+@use "../abstracts/mixins";
 @use "../abstracts/variables" as vars;
 
-@media (max-width: 1024px) {
-  .main {
-    content: "";
-    background: vars.$main-img no-repeat center;
-    background-size: cover;
-    width: 100%;
-    z-index: 1;
-  }
-}
+// Estilos para el layout principal (main section)
+// Incluye ajustes responsive para mobile y tablet
 
 .main {
   background: vars.$main-img no-repeat center;
@@ -27,5 +21,13 @@
     height: 100vh;
     z-index: 1;
     position: relative;
+  }
+  @include mixins.respond-to(lg) {
+    background-position: top;
+  }
+
+  @include mixins.respond-to(sm) {
+    background-size: contain;
+    padding: 1rem;
   }
 }
