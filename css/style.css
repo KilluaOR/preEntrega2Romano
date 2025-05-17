@@ -62,7 +62,7 @@ body {
 
 /*fin de styles de footer*/
 .main {
-  background: url("../../images/fondo2.jpg") no-repeat center;
+  background: url(../../images/fondo2.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
