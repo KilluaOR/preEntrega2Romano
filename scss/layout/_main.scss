@@ -3,7 +3,7 @@
 @media (max-width: 1024px) {
   .main {
     content: "";
-    background: #{vars.$main-img} no-repeat center;
+    background: vars.$main-img no-repeat center;
     background-size: cover;
     width: 100%;
     z-index: 1;
@@ -11,7 +11,7 @@
 }
 
 .main {
-  background: #{vars.$main-img} no-repeat center;
+  background: vars.$main-img no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
