@@ -64,14 +64,14 @@ body {
 @media (max-width: 1024px) {
   .main {
     content: "";
-    background: url("/images/fondo2.jpg") no-repeat center;
+    background: url("../images/fondo2.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     z-index: 1;
   }
 }
 .main {
-  background: url("/images/fondo2.jpg") no-repeat center;
+  background: url("../images/fondo2.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
