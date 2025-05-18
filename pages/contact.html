@@ -92,8 +92,6 @@
           <h2 class="animate__animated animate__tada contact__title">
             Contactame:
           </h2>
-        </div>
-        <div class="contact__item contact__item--img">
           <img class="contact__img" src="" alt="imagen" />
         </div>
         <form class="contact__form" action="procesarform" method="post">
@@ -119,18 +117,16 @@
               name="email"
               required
             />
-            <label class="contact__label contact__label--message" for="message"
-              >Escribe tu mensaje:</label
-            >
             <textarea
               class="contact__textarea"
               name="message"
               id="message"
               rows="4"
+              placeholder="Escribe tu mensaje"
               required
             ></textarea>
           </div>
-          <div class="contact__item">
+          <div class="contact__div">
             <button class="contact__btn" type="submit">Enviar</button>
           </div>
         </form>
