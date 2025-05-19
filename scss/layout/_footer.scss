@@ -3,6 +3,14 @@
 /*styles de footer*/
 .footer {
   background-color: vars.$primary-color;
+  @include mixins.respond-to(xs) {
+    @include mixins.respond-to(sm) {
+      background-color: vars.$primary-color;
+      height: fit-content;
+      width: fit-content;
+      padding: 30px;
+    }
+  }
 }
 
 .footer__sec {
@@ -16,6 +24,20 @@
   height: fit-content;
   width: fit-content;
   padding: 30px;
+  @include mixins.respond-to(xs) {
+    @include mixins.respond-to(sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 50px;
+      justify-content: space-between;
+      align-content: baseline;
+      color: vars.$secondary-color;
+      background-color: vars.$primary-color;
+      height: fit-content;
+      width: fit-content;
+      padding: 30px;
+    }
+  }
 }
 
 .footer__link {

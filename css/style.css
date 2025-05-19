@@ -16,6 +16,14 @@ body {
 .footer {
   background-color: rgb(179, 186, 241);
 }
+@media (max-width: 575.98px) and (max-width: 767.98px) {
+  .footer {
+    background-color: rgb(179, 186, 241);
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+  }
+}
 
 .footer__sec {
   display: grid;
@@ -28,6 +36,20 @@ body {
   height: fit-content;
   width: fit-content;
   padding: 30px;
+}
+@media (max-width: 575.98px) and (max-width: 767.98px) {
+  .footer__sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    justify-content: space-between;
+    align-content: baseline;
+    color: #0d0c0c;
+    background-color: rgb(179, 186, 241);
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+  }
 }
 
 .footer__link {
