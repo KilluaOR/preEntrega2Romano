@@ -63,4 +63,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem;
+  z-index: 1;
+  position: relative;
+  background-color: vars.$container-bg;
 }
