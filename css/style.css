@@ -83,7 +83,7 @@ body {
 }
 @media (max-width: 1024px) {
   .main {
-    background-position: top;
+    background-size: cover;
   }
 }
 @media (max-width: 576px) {
