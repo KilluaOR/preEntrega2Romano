@@ -14,6 +14,10 @@
   }
 }
 
+.contact__img {
+  margin-top: 50px;
+  margin-left: 40px;
+}
 .contact__form-fieldset {
   display: flex;
   flex-direction: column;
@@ -24,4 +28,22 @@
   margin-top: 20px;
   @include mixins.button-style;
 }
+
+%input-base {
+  background-color: vars.$project-color;
+  border-radius: 10px;
+}
+.contact__input {
+  @extend %input-base;
+}
+
+.contact__textarea {
+  @extend %input-base;
+  padding: 7px;
+}
+textarea::placeholder {
+  color: vars.$secondary-color;
+  font-size: 15px;
+}
+
 /*fin de modificaciones en contacto*/
