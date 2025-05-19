@@ -2,7 +2,6 @@
 @use "../abstracts/variables" as vars;
 /*modificaciones en sobre mi*/
 /* grid de about */
-.container,
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,7 +15,37 @@
   justify-content: center;
   align-content: center;
   row-gap: 40px;
-  font-size: 18px;
+  font-size: 15px;
+  @include mixins.respond-to(md) {
+    .about__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 1rem;
+    }
+  }
+
+  @include mixins.respond-to(sm) {
+    .about__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 1rem;
+    }
+  }
+  @include mixins.respond-to(xs) {
+    .about__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
 }
 
 .about__title {
@@ -53,15 +82,16 @@
   grid-area: parte5;
 }
 
-.about__texto,
-.about__subt {
-  text-align: center;
+.about__texto {
+  .about__subt {
+    text-align: center;
+  }
 }
 
 .container {
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin-top: 70px;
   padding: 1rem;
   z-index: 1;
   position: relative;

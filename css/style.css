@@ -139,7 +139,6 @@ body {
 /*fin de modificaciones para navbar*/
 /*modificaciones en sobre mi*/
 /* grid de about */
-.container,
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -149,7 +148,36 @@ body {
   justify-content: center;
   align-content: center;
   row-gap: 40px;
-  font-size: 18px;
+  font-size: 15px;
+}
+@media (max-width: 991.98px) {
+  .about .about__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .about .about__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .about .about__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .about__title {
@@ -186,15 +214,14 @@ body {
   grid-area: parte5;
 }
 
-.about__texto,
-.about__subt {
+.about__texto .about__subt {
   text-align: center;
 }
 
 .container {
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin-top: 70px;
   padding: 1rem;
   z-index: 1;
   position: relative;
