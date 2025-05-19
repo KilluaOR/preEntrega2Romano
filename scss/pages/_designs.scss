@@ -16,7 +16,7 @@
   @include mixins.respond-to(md) {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
     gap: 1rem;
@@ -25,7 +25,7 @@
   @include mixins.respond-to(sm) {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
     gap: 1rem;
