@@ -89,19 +89,21 @@
   }
 }
 
-@include mixins.respond-to(sm) {
-  @include mixins.respond-to(md) {
-    @include mixins.respond-to(lg) {
-      .projects {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        height: auto;
-      }
+@include mixins.respond-to(xs) {
+  @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
+      @include mixins.respond-to(lg) {
+        .projects {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+          height: auto;
+        }
 
-      .project__img {
-        height: auto;
+        .project__img {
+          height: auto;
+        }
       }
     }
   }

@@ -18,12 +18,7 @@
     bottom: 0;
     left: 0;
   }
-  .container {
-    height: 100vh;
-    z-index: 1;
-    position: relative;
-    background-color: vars.$container-bg;
-  }
+
   @include mixins.respond-to(lg) {
     background-size: cover;
   }

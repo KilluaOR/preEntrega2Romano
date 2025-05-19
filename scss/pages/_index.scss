@@ -2,3 +2,18 @@
 @forward "contact";
 @forward "designs";
 @forward "projects";
+@use "../abstracts/variables" as vars;
+
+.index__container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+  background-color: vars.$container-bg;
+}
+
+.index__image {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 250px;
+  border-radius: 25px;
+}
