@@ -40,7 +40,7 @@ body {
 }
 
 /*arreglos para el responsive de footer*/
-@media (max-width: 1024px) {
+@media (max-width: 1199.98px) {
   .footer__link::before {
     content: "";
     position: absolute;
@@ -80,13 +80,14 @@ body {
   height: 100vh;
   z-index: 1;
   position: relative;
+  background-color: rgba(17, 16, 16, 0.525);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1199.98px) {
   .main {
     background-size: cover;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .main {
     background-size: cover;
     padding: 1rem;
@@ -130,7 +131,7 @@ body {
 }
 
 /*arreglos para el responsive de navbar*/
-@media (min-width: 991px) {
+@media (max-width: 767.98px) and (max-width: 991.98px) and (max-width: 1199.98px) {
   .nav-link::before {
     content: "";
     position: absolute;
@@ -397,34 +398,27 @@ textarea::placeholder {
   opacity: 1;
 }
 
-.project__item,
-.project,
-.project__title {
+.project__item .project .project__title {
   text-decoration: none;
 }
 
 /* ajustes para el responsive */
-@media (max-width: 1024px) {
-  /*
-    .projects {
-      position: relative;
-      top: 100px;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
-      align-content: flex-end;
-    }
-  */
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "form survey" "docs docs";
-  }
-}
 @media (max-width: 600px) {
   .projects {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "form" "survey" "docs";
+  }
+  .project__img {
+    height: auto;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 991.98px) and (max-width: 1199.98px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: auto;
   }
   .project__img {
     height: auto;
