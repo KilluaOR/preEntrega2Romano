@@ -1,7 +1,8 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables" as vars;
-/*modificaciones en proyectos*/
-/* grid de proyectos */
+
+/*Proyectos*/
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -12,9 +13,27 @@
   gap: 1rem;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
+
+  @include mixins.respond-to(md) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "form survey"
+      "docs docs";
+  }
+
+  @include mixins.respond-to(sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "form"
+      "survey"
+      "docs";
+    padding: 0 1rem;
+  }
 }
 
-/* areas del grid */
 .projects__header {
   grid-area: header;
   text-align: center;
@@ -23,11 +42,9 @@
 .projects__item--form {
   grid-area: form;
 }
-
 .projects__item--survey {
   grid-area: survey;
 }
-
 .projects__item--docs {
   grid-area: docs;
 }
@@ -40,19 +57,27 @@
   border-radius: 10px;
   border: 2px solid vars.$project-color;
   transition: transform 0.5s ease-in-out;
+
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+  }
+
+  @include mixins.respond-to(sm) {
+    height: auto;
   }
 }
+
 .project__title {
   color: vars.$project-color2;
   height: 40px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 10px;
   font-size: 18px;
   margin-top: 20px;
   text-align: center;
   padding-top: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .project__code {
@@ -64,48 +89,19 @@
   opacity: 1;
 }
 
-.project__item {
-  .project {
-    .project__title {
-      text-decoration: none;
-    }
-  }
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project__title {
+  text-decoration: none;
 }
 
-/* ajustes para el responsive */
-
-@media (max-width: 600px) {
-  .projects {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "form"
-      "survey"
-      "docs";
-  }
-
-  .project__img {
-    height: auto;
-  }
+.project {
+  text-decoration: none;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
 }
-
-@include mixins.respond-to(xs) {
-  @include mixins.respond-to(sm) {
-    @include mixins.respond-to(md) {
-      @include mixins.respond-to(lg) {
-        .projects {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          align-content: center;
-          height: auto;
-        }
-
-        .project__img {
-          height: auto;
-        }
-      }
-    }
-  }
-}
-/*fin de modificaciones en proyectos*/

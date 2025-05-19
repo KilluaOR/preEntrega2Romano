@@ -330,8 +330,7 @@ textarea::placeholder {
   }
 }
 /*fin de modificaciones en designs*/
-/*modificaciones en proyectos*/
-/* grid de proyectos */
+/*Proyectos*/
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -340,9 +339,22 @@ textarea::placeholder {
   gap: 1rem;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
+}
+@media (max-width: 991.98px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "form survey" "docs docs";
+  }
+}
+@media (max-width: 767.98px) {
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "form" "survey" "docs";
+    padding: 0 1rem;
+  }
 }
 
-/* areas del grid */
 .projects__header {
   grid-area: header;
   text-align: center;
@@ -370,18 +382,25 @@ textarea::placeholder {
   transition: transform 0.5s ease-in-out;
 }
 .project__img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+@media (max-width: 767.98px) {
+  .project__img {
+    height: auto;
+  }
 }
 
 .project__title {
   color: white;
   height: 40px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 10px;
   font-size: 18px;
   margin-top: 20px;
   text-align: center;
   padding-top: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .project__code {
@@ -393,33 +412,24 @@ textarea::placeholder {
   opacity: 1;
 }
 
-.project__item .project .project__title {
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__title {
   text-decoration: none;
 }
 
-/* ajustes para el responsive */
-@media (max-width: 600px) {
-  .projects {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "form" "survey" "docs";
-  }
-  .project__img {
-    height: auto;
-  }
+.project {
+  text-decoration: none;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
 }
-@media (max-width: 575.98px) and (max-width: 767.98px) and (max-width: 991.98px) and (max-width: 1199.98px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    height: auto;
-  }
-  .project__img {
-    height: auto;
-  }
-}
-/*fin de modificaciones en proyectos*/
+
 .index__container {
   height: 100vh;
   z-index: 1;
