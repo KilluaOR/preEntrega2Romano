@@ -51,9 +51,6 @@
         transform: translateX(-50%);
         width: 100%;
         height: 2px;
-        background-color: vars.$link-color;
-        visibility: hidden;
-        transition: background-color 0.3s ease-in-out;
       }
     }
   }
