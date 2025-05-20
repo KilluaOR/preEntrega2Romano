@@ -6,8 +6,8 @@
   position: relative;
   padding: 30px;
 
-  display: flex; // <-- agregá esto
-  flex-direction: column; // <-- y esto
+  display: flex;
+  flex-direction: column;
 
   &::before {
     content: "";

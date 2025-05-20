@@ -13,10 +13,7 @@
 }
 
 .index__image {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 250px;
-  border-radius: 25px;
+  @include mixins.img-style;
 }
 
 @include mixins.respond-to(lg) {

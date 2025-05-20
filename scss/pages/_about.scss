@@ -5,7 +5,7 @@
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto;
   grid-template-areas:
     "parte1 parte1"
     "parte2 parte2"
@@ -13,7 +13,6 @@
     "parte4 parte5";
   justify-items: center;
   justify-content: center;
-  align-content: center;
   row-gap: 40px;
   font-size: 15px;
   @include mixins.respond-to(md) {
@@ -40,10 +39,6 @@
     align-items: center;
     gap: 1rem;
   }
-}
-.about__title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
 }
 
 /* areas del grid*/
@@ -75,18 +70,14 @@
   grid-area: parte5;
 }
 
-.about__texto {
+.about__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   .about__subt {
     text-align: center;
   }
 }
-/*
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin-top: 70px;
-  padding: 1rem;
-  z-index: 1;
-  position: relative;
-  background-color: vars.$container-bg;
-}*/
+
+.about__img {
+  @include mixins.img-style;
+}
