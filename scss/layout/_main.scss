@@ -1,3 +1,4 @@
+@use "../abstracts/variables" as vars;
 .main {
   background: url("../images/fondo9.jpg") no-repeat center;
   background-size: cover;
@@ -22,5 +23,10 @@
     position: relative;
     z-index: 1;
     flex-grow: 1;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 70px;
+    padding: 1rem;
+    background-color: vars.$container-bg;
   }
 }
