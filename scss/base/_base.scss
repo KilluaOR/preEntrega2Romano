@@ -1,6 +1,20 @@
 @use "../abstracts/variables" as vars;
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   color: vars.$project-color2;
   font-family: vars.$font-main;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
 }

@@ -1,29 +1,26 @@
-@use "../abstracts/mixins";
-@use "../abstracts/variables" as vars;
-
-// Estilos para el layout principal (main section)
-// Incluye ajustes responsive para mobile y tablet
-
 .main {
   background: url("../images/fondo9.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   position: relative;
   padding: 30px;
+
+  display: flex; // <-- agregá esto
+  flex-direction: column; // <-- y esto
+
   &::before {
     content: "";
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 0;
   }
 
-  @include mixins.respond-to(lg) {
-    background-size: cover;
-  }
-
-  @include mixins.respond-to(sm) {
-    background-size: cover;
-    padding: 1rem;
+  .container {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
   }
 }
