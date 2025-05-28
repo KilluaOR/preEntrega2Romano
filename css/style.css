@@ -12,6 +12,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  font-size: 18px;
 }
 
 body {
@@ -163,7 +164,6 @@ body {
   justify-items: center;
   justify-content: center;
   row-gap: 40px;
-  font-size: 18px;
 }
 @media (max-width: 991.98px) {
   .about {
